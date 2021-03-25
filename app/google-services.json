@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "926599590476",
+    "project_id": "simple-accounting-75a87",
+    "storage_bucket": "simple-accounting-75a87.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926599590476:android:db65811b7713ab5a06bae9",
+        "android_client_info": {
+          "package_name": "com.example.simpleaccounting"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926599590476-mdf1e0hfj2vofu6c272ug1fpetc9efeg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD21F1BOSY5i1BOSOkYuGJNHSWMgHa8e6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926599590476-mdf1e0hfj2vofu6c272ug1fpetc9efeg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

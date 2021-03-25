@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/textInputLayoutPL"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp">-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/login_phoneNumber"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Enter Phone Number" />-->
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/login_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Verify Phone Number"/>-->
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"></ImageView>
+
+    <EditText
+        android:id="@+id/input_country_code"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginBottom="148dp"
+        android:backgroundTint="@color/yellow"
+        android:ems="10"
+        android:hint=" 91"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/input_phone"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/input_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginBottom="172dp"
+        android:backgroundTint="@color/yellow"
+        android:ems="10"
+        android:hint="Enter your Number"
+        android:inputType="number"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.336"
+        app:layout_constraintStart_toEndOf="@+id/input_country_code" />
+
+    <Button
+        android:id="@+id/send_codebtn"
+        android:layout_width="257dp"
+        android:layout_height="43dp"
+        android:background="@color/yellow"
+        android:text="SEND otp"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_phone"
+        app:layout_constraintVertical_bias="0.218" />
+
+    <TextView
+        android:id="@+id/text_process"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="15dp"
+        android:visibility="invisible"
+        android:textColor="#39AD17"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/send_codebtn" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/input_country_code"
+        app:layout_constraintEnd_toStartOf="@+id/input_country_code"
+        app:layout_constraintTop_toTopOf="@+id/input_country_code"
+        app:srcCompat="@drawable/add_black" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

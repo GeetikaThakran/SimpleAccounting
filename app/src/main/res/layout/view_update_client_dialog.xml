@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SalesFragment"
+    >
+
+    <EditText
+        android:id="@+id/add_item_itemName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Client Name *"
+        android:inputType="textPersonName"
+        android:maxLength="14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/client_profile_image" />
+
+    <ImageButton
+        android:id="@+id/add_client_ClientNameIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="5dp"
+        app:srcCompat="@drawable/clnt"
+        app:layout_constraintBottom_toBottomOf="@+id/add_item_itemName"
+        app:layout_constraintEnd_toEndOf="@+id/add_item_itemName"
+        app:layout_constraintTop_toTopOf="@+id/add_item_itemName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    //old name is client firm name
+    <EditText
+        android:id="@+id/add_item_hsnCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Company"
+        android:inputType="textPersonName"
+        android:maxLength="16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_purchasePrice" />
+
+    <!--    <EditText-->
+    <!--        android:id="@+id/add_item_barcode"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="16dp"-->
+    <!--        android:layout_marginLeft="16dp"-->
+    <!--        android:layout_marginEnd="16dp"-->
+    <!--        android:layout_marginRight="16dp"-->
+    <!--        android:ems="10"-->
+    <!--        android:hint="GSTIN"-->
+    <!--        android:inputType="textPersonName"-->
+    <!--        android:maxLength="15"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/add_item_hsnCode" />-->
+
+    <!--    <ImageButton-->
+    <!--        android:id="@+id/add_client_gstinSearchIcon"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginEnd="30dp"-->
+    <!--        android:layout_marginRight="30dp"-->
+    <!--        android:layout_marginBottom="5dp"-->
+    <!--        app:srcCompat="@drawable/search"-->
+    <!--        app:layout_constraintBottom_toBottomOf="@+id/add_item_barcode"-->
+    <!--        app:layout_constraintEnd_toEndOf="@+id/add_item_barcode"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/add_item_hsnCode" />-->
+
+    <EditText
+        android:id="@+id/add_item_purchasePrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Phone Number *"
+        android:inputType="phone"
+        android:maxLength="14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_itemName" />
+
+    <EditText
+        android:id="@+id/add_item_gstinP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_hsnCode" />
+
+    <Button
+        android:id="@+id/update_client_Btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="UPDATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_item_gstinP" />
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/client_profile_image"
+        android:layout_width="86dp"
+        android:layout_height="97dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="7dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/person_image" />
+
+    <ImageView
+        android:id="@+id/iv_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:tint="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/client_profile_image"
+        app:layout_constraintEnd_toEndOf="@+id/client_profile_image"
+        app:srcCompat="@drawable/camera" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

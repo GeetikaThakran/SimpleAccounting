@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center_horizontal"
+    tools:context=".AddCompanyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add new Company"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edit_text_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Company Name"
+        android:importantForAutofill="no"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/edit_text_owner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Owner Name"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+<!--    <EditText-->
+<!--        android:id="@+id/edit_text_gstin"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:hint="GSTIN"-->
+<!--        android:textColor="#000"-->
+<!--        android:textSize="18sp"/>-->
+    <EditText
+        android:id="@+id/edit_text_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Address"
+        android:inputType="text|textMultiLine"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/edit_text_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Phone Number"
+        android:inputType="text|phone"
+        android:textColor="#000"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/button_add_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="save"
+        android:textSize="18sp"/>
+
+</LinearLayout>

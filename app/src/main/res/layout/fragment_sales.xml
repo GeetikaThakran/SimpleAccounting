@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:id="@+id/mainLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SalesFragment">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/purple_500"
+        android:clickable="true"
+        app:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/add_white" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".SalesFragment">
+    <!-- Editext for Search -->
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape"
+                android:iconifiedByDefault="false"
+                android:queryHint="Search Here"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+<!--            <ImageView-->
+<!--                android:id="@+id/ivClearSearchText"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_alignTop="@+id/inputSearch"-->
+<!--                android:layout_alignParentEnd="true"-->
+<!--                android:layout_alignParentRight="true"-->
+<!--                android:layout_alignParentBottom="true"-->
+<!--                android:layout_marginTop="5dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginRight="16dp"-->
+<!--                android:layout_marginBottom="6dp"-->
+<!--                app:srcCompat="@drawable/close" />-->
+
+            <ImageView
+                android:id="@+id/voice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/searchView"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="63dp"
+                android:layout_marginRight="63dp"
+                android:layout_marginBottom="7dp"
+                android:tint="@color/purple_500"
+                app:srcCompat="@drawable/voice_blue" />
+        </RelativeLayout>
+
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="695dp"
+            android:longClickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/searchView"
+            app:layout_constraintVertical_bias="1.0" />
+
+    </LinearLayout>
+
+
+        />
+
+
+
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        tools:context=".SalesFragment">-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/c_n"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/dialog_bg"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/cl3">-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/textInputLayoutt"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_marginBottom="10dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/sales_narration"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Narration..." />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/cl1"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="10dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        android:background="@color/List_divider"-->
+<!--        android:paddingBottom="10dp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+<!--        <TextView-->
+<!--            android:id="@+id/textView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginStart="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="Enter sale details :"-->
+<!--            android:textColor="@color/splash_screen"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:id="@+id/cl2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/cl1">-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textInputLayout"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/sales_invoiceNo"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:inputType="number"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Invoice no." />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/textInputLayout2"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            android:layout_width="150dp"-->
+
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="20dp"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:id="@+id/sales_date"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:hint="Date" />-->
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/cl3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/dialog_bg"-->
+<!--            android:paddingBottom="10dp"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">-->
+
+
+<!--&lt;!&ndash;            <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/sales_addItemBtn"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginRight="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="item list"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintHorizontal_bias="0.39"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintTop_toBottomOf="@+id/item_list_listVieww"></Button>&ndash;&gt;-->
+
+
+<!--            &lt;!&ndash;        <ListView&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:id="@+id/sales_addItem_lv"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:layout_constraintBottom_toTopOf="@+id/sales_addItemBtn"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--            &lt;!&ndash;            app:layout_constraintTop_toTopOf="parent">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;        </ListView>&ndash;&gt;-->
+
+<!--&lt;!&ndash;            <ListView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/item_list_listVieww"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="30dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintBottom_toTopOf="@+id/purchase_addItemBtn"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"></ListView>&ndash;&gt;-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/textView3"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="="-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/textInputLayout6"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textInputLayout5"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:text="X"-->
+<!--                android:textSize="15dp"-->
+<!--                android:textStyle="bold"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/textInputLayout5"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textInputLayout4"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginEnd="100dp"-->
+<!--                android:layout_marginRight="100dp"-->
+<!--                android:text="GrandTotal :"-->
+<!--                android:textColor="@color/viewfinder_laser"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout6" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/textInputLayout4"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/sales_quantity"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Quantity"-->
+<!--                    android:inputType="number" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/textInputLayout6"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textView3"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/sales_total"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Total"-->
+<!--                    android:inputType="number" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/textInputLayout3"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/sales_itemName"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Item Name" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/textInputLayout5"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                app:layout_constraintStart_toEndOf="@+id/textInputLayout4"-->
+<!--                app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/sales_price"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Price"-->
+<!--                    android:inputType="number" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:id="@+id/constraintLayout"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/dialog_bg"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/cl2"-->
+<!--            tools:layout_editor_absoluteX="10dp">-->
+
+<!--&lt;!&ndash;            <Button&ndash;&gt;-->
+<!--&lt;!&ndash;                android:id="@+id/sales_addClientBtn"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginLeft="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginRight="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginBottom="20dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:text="Client list"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:layout_constraintTop_toBottomOf="@id/textInputLayout7" />&ndash;&gt;-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/textInputLayout7"-->
+<!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:paddingBottom="10dp"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/sales_clientName"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:hint="Client Name" />-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/c_n">-->
+
+<!--            <Button-->
+<!--                android:id="@+id/sales_addSaleBtn"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:text="save"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

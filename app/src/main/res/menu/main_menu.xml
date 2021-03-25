@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_account_list"
+            android:title="Account List" />
+
+        <item
+            android:id="@+id/nav_transaction"
+            android:title="Transaction" />
+
+        <item
+            android:id="@+id/nav_item_list"
+            android:title="Items List" />
+        <item
+            android:id="@+id/nav_client_list"
+            android:title="Clients List" />
+        <item
+            android:id="@+id/nav_sale_list"
+            android:title="Sales List" />
+        <item
+            android:id="@+id/nav_purchase_list"
+            android:title="Purchase List" />
+
+
+        <item
+            android:id="@+id/nav_report"
+            android:title="Report" />
+        <item
+            android:id="@+id/nav_settings"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/nav_help_center"
+            android:title="Help Center" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:title="About" />
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Log Out" />
+    </group>
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_chat"
+                android:title="Chat"/>
+            <item
+                android:id="@+id/nav_share"
+                android:title="Share"/>
+            <item
+                android:id="@+id/nav_rate"
+                android:title="Rate"/>
+        </menu>
+    </item>
+</menu>

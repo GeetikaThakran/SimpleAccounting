@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>build.gradle</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #080808;}
+.s1 { color: #067d17;}
+.s2 { color: #1750eb;}
+.s3 { color: #0033b3;}
+.s4 { color: #8c8c8c; font-style: italic;}
+</style>
+</head>
+<body bgcolor="#ffffff">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+build.gradle</font>
+</center></td></tr></table>
+<pre><span class="s0">plugins {</span>
+    <span class="s0">id </span><span class="s1">'com.android.application'</span>
+    <span class="s0">id </span><span class="s1">'com.google.gms.google-services'</span>
+<span class="s0">}</span>
+
+<span class="s0">android {</span>
+    <span class="s0">compileSdkVersion </span><span class="s2">30</span>
+    <span class="s0">buildToolsVersion </span><span class="s1">&quot;30.0.1&quot;</span>
+
+    <span class="s0">defaultConfig {</span>
+        <span class="s0">applicationId </span><span class="s1">&quot;com.example.simpleaccounting&quot;</span>
+        <span class="s0">minSdkVersion </span><span class="s2">16</span>
+        <span class="s0">targetSdkVersion </span><span class="s2">30</span>
+        <span class="s0">versionCode </span><span class="s2">1</span>
+        <span class="s0">versionName </span><span class="s1">'1.0'</span>
+
+        <span class="s0">android.defaultConfig.vectorDrawables.useSupportLibrary = </span><span class="s3">true</span>
+        <span class="s0">testInstrumentationRunner </span><span class="s1">&quot;androidx.test.runner.AndroidJUnitRunner&quot;</span>
+    <span class="s0">}</span>
+
+    <span class="s0">buildTypes {</span>
+        <span class="s0">release {</span>
+            <span class="s0">minifyEnabled </span><span class="s3">false</span>
+            <span class="s0">proguardFiles getDefaultProguardFile(</span><span class="s1">'proguard-android-optimize.txt'</span><span class="s0">), </span><span class="s1">'proguard-rules.pro'</span>
+        <span class="s0">}</span>
+    <span class="s0">}</span>
+    <span class="s0">compileOptions {</span>
+        <span class="s0">sourceCompatibility JavaVersion.VERSION_1_8</span>
+        <span class="s0">targetCompatibility JavaVersion.VERSION_1_8</span>
+    <span class="s0">}</span>
+<span class="s0">}</span>
+
+<span class="s0">dependencies {</span>
+
+    <span class="s0">implementation </span><span class="s1">'androidx.appcompat:appcompat:1.1.0'</span>
+    <span class="s0">implementation </span><span class="s1">'com.google.android.material:material:1.2.1'</span>
+    <span class="s0">implementation </span><span class="s1">'androidx.constraintlayout:constraintlayout:1.1.3'</span>
+    <span class="s0">implementation </span><span class="s1">'androidx.preference:preference:1.1.1'</span>
+    <span class="s0">implementation </span><span class="s1">'com.google.android.material:material:1.0.0'</span>
+    <span class="s4">//noinspection GradleCompatible</span>
+    <span class="s0">implementation </span><span class="s1">'com.android.support:design:28.0.0'</span>
+    <span class="s0">implementation </span><span class="s1">'androidx.legacy:legacy-support-v4:1.0.0'</span>
+    <span class="s0">implementation </span><span class="s1">'com.google.firebase:firebase-auth:20.0.1'</span>
+    <span class="s0">implementation </span><span class="s1">'com.google.firebase:firebase-analytics:18.0.0'</span>
+    <span class="s0">testImplementation </span><span class="s1">'junit:junit:4.+'</span>
+    <span class="s0">androidTestImplementation </span><span class="s1">'androidx.test.ext:junit:1.1.1'</span>
+    <span class="s0">androidTestImplementation </span><span class="s1">'androidx.test.espresso:espresso-core:3.2.0'</span>
+
+    <span class="s0">implementation </span><span class="s1">'com.google.android.material:material:1.1.0'</span>
+    <span class="s0">implementation </span><span class="s1">'androidx.recyclerview:recyclerview:1.1.0'</span>
+    <span class="s0">implementation </span><span class="s1">'androidx.cardview:cardview:1.0.0'</span>
+
+    <span class="s4">//for navigation and drawer</span>
+    <span class="s0">implementation </span><span class="s1">'androidx.navigation:navigation-ui:2.3.0'</span>
+    <span class="s0">implementation </span><span class="s1">'androidx.navigation:navigation-fragment:2.3.0'</span>
+    <span class="s0">implementation </span><span class="s1">'com.google.android.material:material:1.2.0'</span>
+
+    <span class="s4">//for cardView</span>
+    <span class="s0">implementation </span><span class="s1">'com.android.support:design:30.0.1'</span>
+
+    <span class="s4">//for barcode scanner</span>
+    <span class="s0">implementation </span><span class="s1">'com.google.android.gms:play-services-auth:16.0.0'</span>
+    <span class="s0">implementation </span><span class="s1">'me.dm7.barcodescanner:zxing:1.9'</span>
+
+    <span class="s4">//for customized edit text</span>
+    <span class="s0">implementation </span><span class="s1">'androidx.legacy:legacy-support-v4:1.0.0'</span>
+    <span class="s0">implementation </span><span class="s1">'com.google.android.material:material:1.0.0'</span>
+
+    <span class="s4">//for navigation drawer</span>
+    <span class="s3">def </span><span class="s0">nav_version = </span><span class="s1">&quot;2.3.2&quot;</span>
+    <span class="s0">implementation </span><span class="s1">&quot;androidx.navigation:navigation-fragment:</span><span class="s0">$nav_version</span><span class="s1">&quot;</span>
+    <span class="s0">implementation </span><span class="s1">&quot;androidx.navigation:navigation-ui:</span><span class="s0">$nav_version</span><span class="s1">&quot;</span>
+
+<span class="s0">}</span>
+<span class="s0">apply plugin: </span><span class="s1">'com.google.gms.google-services'</span></pre>
+</body>
+</html>

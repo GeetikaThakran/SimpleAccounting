@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.simpleaccounting">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <activity android:name=".purchase_credit_debit"></activity>
+        <activity android:name=".sales_credit_debit" />
+        <activity android:name=".salesListdialog" />
+        <activity android:name=".TaxRegister" />
+        <activity android:name=".TaxComputation" />
+        <activity android:name=".gstr_4" />
+        <activity android:name=".gstr_2" />
+        <activity android:name=".gstr_1" />
+        <activity android:name=".gstr_3b" />
+        <activity android:name=".RatioAnalysis" />
+        <activity android:name=".CashFlow" />
+        <activity android:name=".TrialBalance" />
+        <activity android:name=".BalanceSheet" />
+        <activity android:name=".AccountStatementLadger" />
+        <activity android:name=".ProfitLossAccount" />
+        <activity android:name=".InterestCalculations" />
+        <activity android:name=".PurchaseRegister" />
+        <activity android:name=".BestCustomerSupplier" />
+        <activity android:name=".CustomerSupplierList" />
+        <activity android:name=".OutstandingBills" />
+        <activity android:name=".AccountAging" />
+        <activity android:name=".ItemSales_Purchase" />
+        <activity android:name=".ItemSummary" />
+        <activity android:name=".MonthlyBalance" />
+        <activity android:name=".DayBook" />
+        <activity android:name=".SalesRegister" />
+        <activity android:name=".Tax_report" />
+        <activity android:name=".Accounting_report" />
+        <activity android:name=".client_payment_report" />
+        <activity android:name=".Invoice_ExpenseReport" />
+        <activity android:name=".PurchaseList" />
+        <activity android:name=".SalesList" />
+        <activity android:name=".otp" />
+        <activity android:name=".Login" />
+        <activity android:name=".chat" />
+        <activity android:name=".clientList" />
+        <activity android:name=".ScanCodeActivity" />
+        <activity android:name=".report" />
+        <activity android:name=".about_us" />
+        <activity android:name=".helpCenter" />
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".itemList" />
+        <activity android:name=".account_list" />
+        <activity android:name=".transaction" />
+        <activity android:name=".MainActivity2" />
+        <activity
+            android:name=".AddCompanyActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+</manifest>
